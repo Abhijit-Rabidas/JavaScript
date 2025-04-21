@@ -23,7 +23,7 @@
 const id = Symbol('123')
 const anotherId = Symbol('123')
 // values are not same
-console.log(id === anotherId);
+// console.log(id === anotherId);
 
 // BigInt
 const bigNumber = 33253453458348539534n
@@ -40,6 +40,29 @@ const myFunction = function(){
     console.log("Hello World");
 }
 
-console.log(typeof heros);
-console.log(typeof anotherId);
-console.log(typeof myFunction);
+// console.log(typeof heros);
+// console.log(typeof anotherId);
+// console.log(typeof myFunction);
+
+
+/******************Memory**********************/
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+let myName = "Abhijit"
+let anotherName = myName
+anotherName = "Rabidas"
+
+console.log(myName);
+console.log(anotherName);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+userTwo.email = "abhijit@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
